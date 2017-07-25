@@ -1,10 +1,17 @@
 language: java
 sudo: false
 deploy:
-    provider: releases
-    file: build/libs/xld-sybase-plugin-1.0.0-beta.jar
-    skip_cleanup: true
-    on:
-        all_branches: true
-        tags: true
-        repo: xebialabs-community/xld-sybase-plugin
+  provider: releases
+  file: build/libs/xld-sybase-plugin-1.0.0-beta.jar
+  skip_cleanup: true
+  on:
+    all_branches: true
+    tags: true
+    repo: xebialabs-community/xld-sybase-plugin
+  api_key:
+    secure:
+      secure: tIsEzmHdu0d5yJFxjlpVxx2tbdJ5aEbN9fvqposK6MDUsMLEKF29it9jCanv1dk7QqrZTtrigSEcVXes8FbVlkbCAJHDY/Mgy7vIf5yhD/UDatFTLLvhFMPSWvD1tgvZBRtBkCrwe6CQqP5fZUTOZpGXE8pvnqlJBlkGPC9g1vLhD1ocrFIIjFY7sj3TIiqPcUBKJZm8duUxoenxWjFsLPnEUDIR84nRPiwYz85BRYZOUEl6x7HTQntubbpRDNhNeuGnU+61rD6FXj5a4M7cd5svomKMie8LlVWCfxSFLAYX7xDn95A8PTjwW0WWiF2fMxjxITpMdOdH1gnS69FngEbSCoctw4oXREkqdny1Xi9f/Wr9txunrCcFPoB0J7I1k4ZwE0bc28qGzQAejn94+9tDDiarkSwEwREB8HHy6gZ0h9kT4pQjW7zs7+j6BJiTHTAiwcxn45Fyh9BJAb/3KJsrd+WUn17w1Iw1mAYOrUY33p2Rd/Tc1FmeT4ntkh7BGHaEqhkDesjNA6E1gnxoXmRqY1ecbmo2HCgzFdUh7zyPyHf05a+0DOIgdhXb2LwU9tYiTkmhdve6piqVWJu0PR859F27mGAwuz8yzr1H4JLipsDnkqBMDKseYzsZwz5orXnkFiUriPhkLer9yXXMTOu12B81LRQDBhyU3dAFxSE=
+notifications:
+  hipchat:
+    rooms:
+      secure: L+zbQYgxBndBSO/iC2S8N7u+WE/3fg3Ge7hUUtcERCuhViy0JSr9+QdnvIFkP5E1szYa4+TH0PfvjKGjCcFbjFVOjFwol9TPc1h6FcaHD1llp2nZCF9DTvCV5NjhQ61aZcoUGBPpdEQYMMhVeOvV2jAGPQvIMgee4HUedzKzJ0G3Z1SG6O5l9iY8qvrBeiEIThxdCniR8d7qnKkJOgFqpOkcGZ0zenTZ8co4R5dN9xi2A82N0295Fgcspbmlqz8gQdj0RBOjXs+rHTAwQyNTpzCfauTG3G+3SkWcEj3FBrxaI9n9szoPR6spDObkVLlmTqhphhZlB28DjT4zOFhGam7XuiI4bUWbmSOR+KrX3NV2kmV0E+3UqStfJRbU+gt9MT1ZJNskaSR+LmBX2mLuL0pNvkJhp4MGyjDdLtPvBOXTieVA3BoLTJFzuCN8u0X1DWnNosxmtOBsH16ig379f3+g7Xy1MfFNEHVHD7xn+4IqNvZvf/qxyYIuES3KTylGCSW5FIsYMOx29R3b/8kLTFXEGrJEEx1ake6Fc1FunkkV7f2EZBdjY/UVhMtim6cjjVZVjc4PRwifonwLNToxBKyWG2Q2sib5dNKHqygCEq6Nr20IPzyn4Z6hNwrOF+TD6F3XP4K4fhz/GlfoosrKN90/aAam6TIGVlzagFRF9hw=
